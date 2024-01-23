@@ -1,0 +1,21 @@
+/* Write your CSS code here */
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .blogs-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
