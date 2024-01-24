@@ -1,5 +1,5 @@
-import './index.css'
 import {Link} from 'react-router-dom'
+import './index.css'
 
 const Header = () => (
   <nav className="header-container">
@@ -16,13 +16,9 @@ const Header = () => (
         <Link className="route-link" to="/">
           Home
         </Link>
-      </li>
-      <li className="link-item">
         <Link className="route-link" to="/about">
           About
         </Link>
-      </li>
-      <li className="link-item">
         <Link className="route-link" to="/contact">
           Contact
         </Link>

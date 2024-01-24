@@ -1,8 +1,10 @@
 // Write your JS code here
-import './index.css'
+
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+
+import './index.css'
 
 class BlogItemDetails extends Component {
   state = {blogItemData: {}, isLoading: true}
@@ -35,7 +37,7 @@ class BlogItemDetails extends Component {
 
     return (
       <div className="blog-info">
-        <h2 className="blog-details-title">{title}</h2>
+        <h1 className="blog-details-title">{title}</h1>
 
         <div className="author-details">
           <img className="author-pic" src={avatarUrl} alt={author} />
@@ -53,7 +55,7 @@ class BlogItemDetails extends Component {
     return (
       <div className="blog-container">
         {isLoading ? (
-          <div data-testid="loader" className="spinner">
+          <div data-testid="loader">
             <Loader type="TailSpin" color="#00bfff" height={50} width={50} />
           </div>
         ) : (
